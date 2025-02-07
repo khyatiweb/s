@@ -1,0 +1,24 @@
+<html>
+<head>
+<tittle>Quiz App</tittle>
+</head>
+<body>
+<h1>Simple Quiz</h1>
+<p>What is the Capital of France?</p>
+<button onclick="checkAnswer('Paris')">Paris</button>
+<button onclick="checkAnswer('London')">London</button>
+<button onclick="checkAnswer('Berlin')">Berlin</button>
+<p id="result"></p>
+<script>
+function checkAnswer(answer) {
+const result = document.getElementById("result");
+if (answer === "Paris") {
+result.innerText = "Correct!";
+} else {
+result.innerText = "Wrong answer!";
+ }
+}
+</script>
+</body>
+</html>
+
