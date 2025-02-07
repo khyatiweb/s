@@ -1,0 +1,46 @@
+<html>
+<head>
+<tittle>simple calculation</tittle>
+</head>
+<body>
+<h1>simple calculator</h1>
+<form>
+<input type="number" id="num1" place holder="Enter first number">
+<input type="number" id="num2" place holder="Enter second number">
+<button type="button" on click="calculate('+')">Add</button>
+<button type="button" on click="calculate('-')">Subtract</button>
+<button type="button" on click="calculate('*')">Multiply</button>
+<button type="button" on click="calculate('/')">Divide</button>
+</form>
+<p id="result"></p>
+
+<scipt>
+function calculate (oprator) {
+const num1 = parseFloat(document.getElementByld("num1").value);
+const num2 = parseFloat(document.getElementByld("num2").value);
+let result;
+ if (oprator === '+') {
+result = num1 + num2;
+} else if (oprator === '-') {
+result = num1 - num2;
+} else if (oprator === '*') {
+result = num1 * num2;
+} else if (oprator === '/') {
+if (num2 ! = = 0) {
+result = num1 / num2;
+} else {
+result = Cannot divide zero.";
+ }
+}
+Document.getElementByld("result").inner Text = "result: " + result;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
